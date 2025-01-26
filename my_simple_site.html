@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой Сайт</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .content-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        /* Стили для формы */
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .content-text {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок сайта -->
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+    </header>
+
+    <!-- Основной контент -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">О сайте</h2>
+            <p class="content-text">
+                Этот сайт был создан для демонстрации простых веб-технологий: HTML, CSS и JavaScript. Мы использовали анимации, формы и кнопки, чтобы сделать страницу более динамичной.
+            </p>
+
+            <h2 class="section-title">Почему этот сайт крутой?</h2>
+            <p class="content-text">
+                Он простой, но с интересными элементами, такими как анимации при наведении на кнопки. Вы можете взаимодействовать с сайтом через форму, а также узнать больше о том, как работает веб-разработка.
+            </p>
+
+            <button class="button" onclick="alert('Спасибо за интерес!')">Нажми меня!</button>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="content-text">
+                Оставьте свои данные, и мы с вами свяжемся!
+            </p>
+<form action="#" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+
+                <input type="submit" value="Отправить сообщение">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
